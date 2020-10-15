@@ -11,13 +11,14 @@ public class FizzBuzz {
     private static final String FIZZ_BUZZ = "FizzBuzz";
     private static final String FIZZ_WHIZZ = "FizzWhizz";
     private static final String BUZZ_WHIZZ = "BuzzWhizz";
+    private static final String FIZZ_BUZZ_WHIZZ = "FizzBuzzWhizz";
 
     public String countOff(int orderNumber) {
         boolean isModulo3 = orderNumber % MODULO_3 == 0;
         boolean isModulo5 = orderNumber % MODULO_5 == 0;
         boolean isModulo7 = orderNumber % MODULO_7 == 0;
         if(isModulo3 && isModulo5 && isModulo7){
-            return "FizzBuzzWhizz";
+            return FIZZ_BUZZ_WHIZZ;
         }
         if(isModulo3 && isModulo5){
             return FIZZ_BUZZ;
