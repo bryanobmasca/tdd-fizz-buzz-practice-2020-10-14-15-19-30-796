@@ -16,6 +16,9 @@ public class FizzBuzz {
         boolean isModulo3 = orderNumber % MODULO_3 == 0;
         boolean isModulo5 = orderNumber % MODULO_5 == 0;
         boolean isModulo7 = orderNumber % MODULO_7 == 0;
+        if(isModulo3 && isModulo5 && isModulo7){
+            return "FizzBuzzWhizz";
+        }
         if(isModulo3 && isModulo5){
             return FIZZ_BUZZ;
         }
