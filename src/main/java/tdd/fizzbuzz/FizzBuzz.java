@@ -21,6 +21,9 @@ public class FizzBuzz {
         if(isModulo3 && isModulo7){
             return FIZZ_WHIZZ;
         }
+        if(isModulo5 && isModulo7){
+            return "BuzzWhizz";
+        }
         if(isModulo3){
             return FIZZ;
         }
